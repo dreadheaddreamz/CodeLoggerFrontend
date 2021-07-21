@@ -6,7 +6,7 @@ const Nav = () => {
         color: "darkgrey",
     }
     const activeLink = {
-        color: "red",
+        color: "lightblue",
         fontWeight: "bold"
     }
 
@@ -25,7 +25,7 @@ const Nav = () => {
                 <li>
                     <NavLink 
                     exact
-                    to="/Log"
+                    to="/tracker"
                     style={link}
                     activeStyle={activeLink}>
                         Log

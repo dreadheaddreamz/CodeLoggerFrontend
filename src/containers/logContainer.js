@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
+//import {Link} from 'react-router-dom'
 
-class logContainer extends Component {
+class LogContainer extends Component {
     render() {
         return (
             <div className="Log-container">
@@ -12,4 +12,4 @@ class logContainer extends Component {
     }
 }
 
-export default logContainer
+export default LogContainer

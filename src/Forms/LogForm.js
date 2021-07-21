@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {addLog} from '.actions/logActions'
+import {addLog} from '../actions/logActions'
 import { connect } from 'react-redux'
 class LogForm extends Component {
 
@@ -41,7 +41,7 @@ class LogForm extends Component {
                 <input type="text" name="length" value={this.state.length} onChange={this.handleOnChange} />
                 <br />
                 <label>Notes: </label>
-                <input type="text" name="notes" value={this.state.date} onChange={this.handleOnChange} />
+                <input type="text" name="notes" value={this.state.notes} onChange={this.handleOnChange} />
                 <br />
                 <input type="submit" value="Add Log" />
             </form>
