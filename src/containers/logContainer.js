@@ -11,7 +11,7 @@ class LogContainer extends Component {
             <div className="Log-container">
                 {this.renderLogs}
                 <h1>This is a the container</h1>
-                <a href="http://localhost:3000/tracker/new">
+                <a href="http://localhost:3000/trackers/new">
                     <button>Add Log</button>
                 </a>
 

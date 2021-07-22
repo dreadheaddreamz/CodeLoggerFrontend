@@ -29,7 +29,7 @@ const Nav = () => {
                 <li>
                     <NavLink 
                     exact
-                    to="/tracker"
+                    to="/trackers"
                     style={link}
                     activeStyle={activeLink}>
                         Log
