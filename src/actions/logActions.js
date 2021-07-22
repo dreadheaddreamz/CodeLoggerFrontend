@@ -1,4 +1,4 @@
-export const addLog = log => {
+export const addLog = tracker => {
     return (dispatch) => {
         fetch("http://localhost:3001/trackers", {
             method: "POST",
@@ -7,7 +7,7 @@ export const addLog = log => {
         },
 
             body: JSON.stringify({
-                log
+                tracker
             })
         })
         .then(resp => resp.json())

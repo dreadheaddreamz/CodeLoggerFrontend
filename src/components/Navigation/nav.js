@@ -1,9 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Logo from './logo'
 
 const Nav = () => {
     const link = {
-        color: "darkgrey",
+        color: "black",
     }
     const activeLink = {
         color: "lightblue",
@@ -11,7 +12,9 @@ const Nav = () => {
     }
 
     return(
+        <img src="public/codelog.png" alt="" />,
         <div className="NavBar">
+            <Logo />
             <ul>
             <li>
                     <NavLink 
