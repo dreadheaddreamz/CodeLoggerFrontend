@@ -13,6 +13,21 @@ html {
   margin-bottom: 25px;
 }
 
+.logForm {
+  display: inline-block;
+}
+
+form {
+  display: table;
+}
+label {
+  display: table;
+}
+
+input {
+  display: table;
+}
+
 ul {
   list-style-type: none;
 }

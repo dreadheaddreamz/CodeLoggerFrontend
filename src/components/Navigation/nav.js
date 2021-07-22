@@ -20,6 +20,7 @@ const Nav = () => {
                     style={link}
                     activeStyle={activeLink}>
                         Home
+                        <br /> 
                     </NavLink>
                 </li>
                 <li>
@@ -29,6 +30,7 @@ const Nav = () => {
                     style={link}
                     activeStyle={activeLink}>
                         Log
+                        <li> | </li>
                     </NavLink>
                 </li>
                 <li>
@@ -38,6 +40,7 @@ const Nav = () => {
                 style={link}
                 activeStyle={activeLink}>
                     To Do's
+                    <li> | </li>
                 </NavLink>
                 </li>
             </ul>

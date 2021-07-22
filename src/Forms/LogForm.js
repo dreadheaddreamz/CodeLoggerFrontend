@@ -30,21 +30,26 @@ class LogForm extends Component {
 
     render() {
         return (
+            <div className="logForm">
             <form onSubmit={this.handleSubmit}>
                 <label>Date: </label>
-                <input type="text" name="date" value={this.state.date} onChange={this.handleOnChange} />
+                <input type="text" name="date" placeholder="Date" value={this.state.date} onChange={this.handleOnChange} />
+                <br />
                 <br />
                 <label>Language: </label>
                 <input type="text" name="language" value={this.state.language} onChange={this.handleOnChange} />
                 <br />
+                <br />
                 <label>Length: </label>
                 <input type="text" name="length" value={this.state.length} onChange={this.handleOnChange} />
+                <br />
                 <br />
                 <label>Notes: </label>
                 <input type="text" name="notes" value={this.state.notes} onChange={this.handleOnChange} />
                 <br />
                 <input type="submit" value="Add Log" />
             </form>
+            </div>
         )
     }
 }
