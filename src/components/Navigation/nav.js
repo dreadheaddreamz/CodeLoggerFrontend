@@ -39,7 +39,7 @@ const Nav = () => {
                 <li>
                 <NavLink
                 exact
-                to="/ToDo"
+                to="/todos"
                 style={link}
                 activeStyle={activeLink}>
                     To Do's

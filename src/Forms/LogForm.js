@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {addLog} from '../actions/logActions'
+//import {addLog} from '../actions/logActions'
 import { connect } from 'react-redux'
 class LogForm extends Component {
 
@@ -55,15 +55,11 @@ class LogForm extends Component {
 }
 
 const mapStateToProps = (state) => {
+    console.log(state);
     return {
         logs: state.logReducer.logs
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        addLog: (logs) => dispatch(addLog(logs))
-    }
-}
 
-export default connect(mapStateToProps, mapDispatchToProps)(LogForm)
+export default connect(mapStateToProps)(LogForm)

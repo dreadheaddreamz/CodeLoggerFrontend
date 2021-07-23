@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 
 
-class Log extends Component {
+class Todos extends Component {
  render() {
      return (
-        <h1>log </h1>
+        <h1>Todo Section </h1>
      )
     }
 }
-export default Log
+
+export default Todos

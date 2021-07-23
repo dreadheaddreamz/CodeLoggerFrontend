@@ -8,7 +8,9 @@ class LogContainer extends Component {
         return ( 
             <div className="Log-container">
                 <Logs date={this.props.date} language={this.props.language} length={this.props.length} notes={this.props.notes}  />
-
+            <a href="http://localhost:3000/trackers/new">
+                <button>Add Log</button>
+            </a>
             </div>
         )
     }
@@ -16,10 +18,7 @@ class LogContainer extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        date: state.logReducer.date,
-        language: state.logReducer.language,
-        length: state.logReducer.length,
-        notes: state.logReducer.notes
+        logs: state.logReducer.logs
     }
 }
 

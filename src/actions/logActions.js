@@ -15,6 +15,7 @@ export const addLog = tracker => {
         
     }
 }
+
 export const getAllTrackers = () => {
     return (dispatch) => {
         dispatch({type: "LOADING_LOGS", loading: true})

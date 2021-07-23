@@ -1,4 +1,4 @@
-export const addLog = tracker => {
+export const addTodo = todo => {
     return (dispatch) => {
         fetch("http://localhost:3001/todos", {
             method: "POST",
@@ -7,11 +7,11 @@ export const addLog = tracker => {
         },
 
             body: JSON.stringify({
-                tracker
+                todo
             })
         })
         .then(resp => resp.json())
-        .then(resp => dispatch({type: "ADD_TODO", log: resp}))
+        .then(resp => dispatch({type: "ADD_TODO", todo: resp}))
         
     }
 }
@@ -20,6 +20,6 @@ export const getAllTasks = () => {
         dispatch({type: "LOADING_TODOS", loading: true})
         fetch("http://localhost:3001/todos")
         .then(resp => resp.json())
-        .then(resp => dispatch({type: "GET_TODOS", logs: resp}))
+        .then(resp => dispatch({type: "GET_TODOS", todos: resp}))
     }
 }

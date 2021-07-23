@@ -24,6 +24,10 @@ html {
   display: inline-block;
 }
 
+.todoForm {
+  display: inline-block;
+}
+
 form {
   display: table;
 }
