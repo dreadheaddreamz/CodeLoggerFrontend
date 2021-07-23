@@ -54,4 +54,16 @@ class LogForm extends Component {
     }
 }
 
-export default connect(null, {addLog})(LogForm)
+const mapStateToProps = (state) => {
+    return {
+        logs: state.logReducer.logs
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addLog: (logs) => dispatch(addLog(logs))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(LogForm)

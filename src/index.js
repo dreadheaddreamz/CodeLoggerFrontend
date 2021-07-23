@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
-import { applyMiddleware} from 'redux';
+import { applyMiddleware, combineReducers, createStore} from 'redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import {createStore} from 'redux'
 import logReducer from './reducers/logReducers';
+import todoReducer from './reducers/todoReducer';
 import reportWebVitals from './reportWebVitals';
 
-const store = createStore(logReducer, composeWithDevTools(applyMiddleware(thunk)))
+const rootReducer = combineReducers({logReducer, todoReducer})
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)))
 
 ReactDOM.render(
   <Provider store={store}>

@@ -1,28 +1,25 @@
 import React, {Component} from 'react'
+import Logs from '../components/Logs'
 import { connect } from 'react-redux'
-import Log from '../components/Log'
-//import {Link} from 'react-router-dom'
 
 class LogContainer extends Component {
-    renderLogs = () => this.props.logs.map((log, id) => <Log key={id} text={log} />)
 
     render() {
-        return (
+        return ( 
             <div className="Log-container">
-                {this.renderLogs}
-                <h1>This is a the container</h1>
-                <a href="http://localhost:3000/trackers/new">
-                    <button>Add Log</button>
-                </a>
+                <Logs date={this.props.date} language={this.props.language} length={this.props.length} notes={this.props.notes}  />
 
             </div>
         )
     }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
     return {
-        logs: state.logs
+        date: state.logReducer.date,
+        language: state.logReducer.language,
+        length: state.logReducer.length,
+        notes: state.logReducer.notes
     }
 }
 
