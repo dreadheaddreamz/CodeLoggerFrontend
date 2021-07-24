@@ -17,6 +17,24 @@ html {
 
 .home {
   text-align: center;
+  flex-wrap: wrap;
+}
+
+.home-box {
+  margin-top: 80px;
+}
+
+.home-image {
+  margin-right: 75px;
+	margin-left: 75px;
+	margin-top: 20px;
+	/* background-color: white; */
+	padding-right: 75px;
+	padding-left: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	background: #000000; /* fallback for old browsers */
 }
 
 .logForm {
@@ -66,6 +84,10 @@ html {
 
 .button {
   background-color: teal;
+}
+
+.button:hover {
+  color: red;
 }
 
 

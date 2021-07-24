@@ -1,10 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
+import homeimage from '../images/homeimage.jpeg'
 
-class Home extends Component {
-    render() {
+const Home = () => {
         return (
-            <div className="home">
-                <h1>Code Log</h1>
+            <div>
+                <h1><strong>Code Task</strong></h1>
+                <img src={homeimage} alt="home" height={300} width={300} className="home-image" />
                 <p>
                     Welcome to Code Log where you can track and keep notes of the progess you have made in your coding journey. 
                     As well as keeping track of your progress, we also have a To Do list. You can use this list to prioritize what 
@@ -13,6 +14,5 @@ class Home extends Component {
             </div>
         )
     }
-}
 
 export default Home

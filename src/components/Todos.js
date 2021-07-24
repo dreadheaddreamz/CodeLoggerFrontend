@@ -6,6 +6,7 @@ class Todos extends Component {
      return (
         <h1>Todo Section </h1>,
         <div className="todo-box">
+            <li>
         {this.props.todos.map((todo, id) =>
         <div className="tbox" key={id}>
         <h3>Title:{todo.title}</h3>
@@ -14,6 +15,7 @@ class Todos extends Component {
         <h3>Context:{todo.context}</h3>
         </div>
         )}
+        </li>
     </div>
      )
     }
