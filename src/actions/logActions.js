@@ -21,6 +21,6 @@ export const getAllTrackers = () => {
         dispatch({type: "LOADING_LOGS", loading: true})
         fetch("http://localhost:3001/trackers")
         .then(resp => resp.json())
-        .then(resp => dispatch({type: "GET_LOGS", logs: resp}))
+        .then(resp => dispatch({type: "GET_LOGS", logs: resp}, console.log(resp)))
     }
 }

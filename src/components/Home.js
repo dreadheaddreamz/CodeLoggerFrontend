@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Home extends Component {
     render() {
         return (
-            <div className>
+            <div className="home">
                 <h1>Code Log</h1>
                 <p>
                     Welcome to Code Log where you can track and keep notes of the progess you have made in your coding journey. 

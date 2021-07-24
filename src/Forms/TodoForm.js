@@ -47,7 +47,7 @@ class TodoForm extends Component {
                 <label>context: </label>
                 <input type="text" name="context" value={this.state.context} onChange={this.handleOnChange} />
                 <br />
-                <input type="submit" value="Add Log" />
+                <input type="submit" value="Add Task" />
             </form>
             </div>
         )
@@ -60,10 +60,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        addTodo: (todos) => dispatch(addTodo(todos))
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(TodoForm)
+export default connect(mapStateToProps, {addTodo})(TodoForm)

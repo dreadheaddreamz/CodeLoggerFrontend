@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-//import {addLog} from '../actions/logActions'
+import {addLog} from '../actions/logActions'
 import { connect } from 'react-redux'
 class LogForm extends Component {
 
@@ -26,9 +26,11 @@ class LogForm extends Component {
             length: " ",
             notes: " "
         })
+        this.props.history.push("/trackers")
     }
 
     render() {
+        console.log("form props", this.props)
         return (
             <div className="logForm">
             <form onSubmit={this.handleSubmit}>
@@ -62,4 +64,4 @@ const mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps)(LogForm)
+export default connect(mapStateToProps, {addLog})(LogForm)

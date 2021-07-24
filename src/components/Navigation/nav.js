@@ -4,7 +4,7 @@ import Logo from './logo'
 
 const Nav = () => {
     const link = {
-        color: "black",
+        color: "lightgrey",
     }
     const activeLink = {
         color: "lightblue",

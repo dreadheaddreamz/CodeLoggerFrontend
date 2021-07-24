@@ -31,9 +31,7 @@ class App extends Component {
         <Route exact path="/trackers" >
           <LogContainer />
         </Route>
-        <Route exact path="/trackers/new" >
-          <LogForm />
-        </Route>
+        <Route exact path="/trackers/new" render ={(routeprops) => (<LogForm {...routeprops} />) }/>
         <Route exact path="/todos" >
           <TodoContainer/>
         </Route>
@@ -56,4 +54,13 @@ const mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps, {getAllTrackers, getAllTasks})(App)
+const mapDispatchToProps = (dispatch) => {
+  console.log(dispatch);
+  return {
+      getAllTrackers: () => dispatch(getAllTrackers()),
+      getAllTasks: () => dispatch(getAllTasks())
+  }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)

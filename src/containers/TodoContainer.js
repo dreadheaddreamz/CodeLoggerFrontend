@@ -6,10 +6,10 @@ import { connect } from 'react-redux'
 class TodoContainer extends Component {
     render() {
         return (
-            <div className="Todo-container">
-                <Todos />
+            <div className="todo-container">
+                <Todos todos = {this.props.todos} />
                 <a href="http://localhost:3000/todos/new">
-                <button>Add Task</button>
+                <button className="button">Add Task</button>
                 </a>
             </div>
 

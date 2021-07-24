@@ -6,12 +6,13 @@ class LogContainer extends Component {
 
     render() {
         return ( 
-            <div className="Log-container">
-                <Logs date={this.props.date} language={this.props.language} length={this.props.length} notes={this.props.notes}  />
-            <a href="http://localhost:3000/trackers/new">
-                <button>Add Log</button>
+            <div className= "log-box">
+                <Logs logs = {this.props.logs}  />
+                <a href="http://localhost:3000/trackers/new">
+            <button className="button">Add Log</button>
             </a>
             </div>
+            
         )
     }
 }
