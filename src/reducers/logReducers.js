@@ -6,7 +6,11 @@ const logReducer = (state = {logs: [], loading: false}, action) => {
                 return{...state,
                     logs: [...state.logs], loading: true}
             case 'GET_LOGS':
-                return {...state, logs: action.logs, loading: false}    
+                return {...state, logs: action.logs, loading: false}
+            case 'DELETE_LOGS':
+                console.log('delete action', action)
+                const logs = state.logs.filter(log => log.id !== action.log.id)
+                return{...state, logs}
             default:
                 return state;
     }

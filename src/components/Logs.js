@@ -1,7 +1,14 @@
 import React, { Component } from "react";
+import {connect} from 'react-redux'
+import {deleteLog} from '../actions/logActions'
 
 
 class Log extends Component {
+    handleOnClick = (id) => {
+        console.log("props from delete function", this.props.logs.id)
+        this.props.deleteLog(id)
+    }
+
  render() {
      return (
          <div className="log-box">
@@ -12,6 +19,7 @@ class Log extends Component {
         <h3>Language:{log.language}</h3>
         <h3>Time:{log.length}</h3>
         <h3>Notes: {log.notes}</h3>
+        <button onClick={() => this.handleOnClick(log.id)} className="delete">Delete Log</button>
         </li>
         </div>
         )}
@@ -19,4 +27,11 @@ class Log extends Component {
      )
     }
 }
-export default Log
+
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        deleteLog: (log) => dispatch(deleteLog(log))
+    }
+}
+export default connect(null,  mapDispatchToProps)(Log)

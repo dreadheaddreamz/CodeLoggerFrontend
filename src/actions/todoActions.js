@@ -15,6 +15,18 @@ export const addTodo = todo => {
         
     }
 }
+
+export const deleteTodo = (id) => {
+    return (dispatch) => {
+        fetch(`http://localhost:3001/todos/${id}`, {
+            method: "DELETE",
+        })
+        .then(response => response.json())
+        .then(response => dispatch({type: "DELETE_TASK", todo: response}),console.log("this is id", id))
+    }
+}
+
+
 export const getAllTasks = () => {
     return (dispatch) => {
         dispatch({type: "LOADING_TODOS", loading: true})

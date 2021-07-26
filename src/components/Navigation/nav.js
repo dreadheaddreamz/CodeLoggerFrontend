@@ -42,7 +42,7 @@ const Nav = () => {
                 to="/todos"
                 style={link}
                 activeStyle={activeLink}>
-                    To Do's
+                    Task
                     <li> | </li>
                 </NavLink>
                 </li>

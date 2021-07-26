@@ -35,10 +35,7 @@ class App extends Component {
         <Route exact path="/todos" >
           <TodoContainer/>
         </Route>
-        <Route exact path="/todos/new" >
-          <TodoForm />
-          </Route>
-
+        <Route exact path="/todos/new" render ={(routeprops) => (<TodoForm {...routeprops} />) }/>
 
         </Switch>
       </Router>

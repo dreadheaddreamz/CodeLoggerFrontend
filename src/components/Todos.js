@@ -1,7 +1,15 @@
 import React, { Component } from "react";
+import {connect} from 'react-redux'
+import {deleteTodo} from '../actions/todoActions'
 
 
 class Todos extends Component {
+    handleOnClick = (id) => {
+        console.log("props from delete function", this.props.todos.id)
+        this.props.deleteTodo(id)
+    }
+
+
  render() {
      return (
         <h1>Todo Section </h1>,
@@ -13,6 +21,7 @@ class Todos extends Component {
         <h3>Priority:{todo.priority}</h3>
         <h3>Goal Date:{todo.completeBy}</h3>
         <h3>Context:{todo.context}</h3>
+        <button onClick={() => this.handleOnClick(todo.id)} className="delete">Delete Task</button>
         </div>
         )}
         </li>
@@ -21,4 +30,10 @@ class Todos extends Component {
     }
 }
 
-export default Todos
+const mapDispatchToProps = (dispatch) => {
+    return {
+        deleteTask: (todo) => dispatch(deleteTodo(todo))
+    }
+}
+
+export default connect (null, mapDispatchToProps)(Todos)

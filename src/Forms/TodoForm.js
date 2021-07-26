@@ -26,6 +26,7 @@ class TodoForm extends Component {
             context: " ",
             completeBy: " "
         })
+        this.props.history.push("/todos")
     }
 
     render() {
