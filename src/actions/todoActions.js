@@ -22,7 +22,7 @@ export const deleteTodo = (id) => {
             method: "DELETE",
         })
         .then(response => response.json())
-        .then(response => dispatch({type: "DELETE_TASK", todo: response}),console.log("this is id", id))
+        .then(response => dispatch({type: "DELETE_TODO", todo: response}),console.log("this is todo", id))
     }
 }
 

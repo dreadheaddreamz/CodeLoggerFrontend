@@ -46,7 +46,8 @@ class App extends Component {
 const mapStateToProps = (state) => {
   console.log(state);
   return {
-      logs: state.logReducer.logs
+      logs: state.logReducer.logs,
+      todos: state.todoReducer.todos
   }
 }
 

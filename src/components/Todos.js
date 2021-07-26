@@ -5,7 +5,7 @@ import {deleteTodo} from '../actions/todoActions'
 
 class Todos extends Component {
     handleOnClick = (id) => {
-        console.log("props from delete function", this.props.todos.id)
+        console.log("props from todo unction", this.props.todos.id)
         this.props.deleteTodo(id)
     }
 
@@ -32,7 +32,7 @@ class Todos extends Component {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        deleteTask: (todo) => dispatch(deleteTodo(todo))
+        deleteTodo: (todo) => dispatch(deleteTodo(todo))
     }
 }
 

@@ -7,7 +7,7 @@ const todoReducer = (state = {todos: [], loading: false}, action) => {
                     todos: [...state.todos], loading: true}
             case 'GET_TODOS':
                 return {...state, todos: action.todos, loading: false}
-            case 'DELETE_TASK': 
+            case 'DELETE_TODO': 
                     const todos = state.todos.filter(todo => todo.id !== action.todo.id)
                     return{...state, todos}
             default:
