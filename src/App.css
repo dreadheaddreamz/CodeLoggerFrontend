@@ -16,25 +16,48 @@ html {
 }
 
 .home {
+  align-content: center;
   text-align: center;
-  flex-wrap: wrap;
 }
 
 .home-box {
   margin-top: 80px;
+  align-content: center;
 }
 
 .home-image {
+  align-content: center;
   margin-right: 75px;
 	margin-left: 75px;
 	margin-top: 20px;
 	/* background-color: white; */
-	padding-right: 75px;
-	padding-left: 50px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	border-radius: 10px;
 	background: #000000; /* fallback for old browsers */
+}
+
+.homesection {
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  width: 400px;
+    padding: 20px;
+    overflow: hidden;
+
+}
+
+.homesection img {
+  margin: auto;
+    float: center;
+}
+
+.homesection span {
+  margin-left: 30px;
+    display: block;
+    margin: 2px 0 0 0;
 }
 
 .logForm {
