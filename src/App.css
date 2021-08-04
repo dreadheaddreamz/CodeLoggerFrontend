@@ -106,12 +106,13 @@ html {
 }
 
 .button {
-  background-color: teal;
+  background-color: black;
+  color: white;
   position: sticky;
 }
 
 .button:hover {
-  color: red;
+  color:lightblue;
 }
 
 
@@ -139,4 +140,12 @@ li {
   float: left;
   color: lightgray;
   padding-right: 15px;
+}
+
+.delete {
+  color: crimson;
+  background-color: black;
+}
+.delete:hover {
+  color: red;
 }
