@@ -225,6 +225,7 @@ li {
 	border: 1px solid #4b4a4a;
 	padding: 5px 15px 5px 15px;
 	color: white;
+  box-shadow: 5px 5px black;
 	box-shadow: inset -1px -1px 3px #4b4a4a;
 	-moz-box-shadow: inset -1px -1px 3px #4b4a4a;
 	-webkit-box-shadow: inset -1px -1px 3px #4b4a4a;
@@ -234,6 +235,95 @@ li {
 	-moz-border-radius: 3px;	
 	font-weight: bold;
 }
+
+
+.logForm label {
+  display:block;
+	margin-bottom: 10px;
+}
+
+.logForm label > span {
+  float: center;
+	width: 100px;
+	color: black;
+	font-weight: bold;
+	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.logForm fieldset {
+  border-radius: 25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #fdfbfb;
+	padding: 50px;
+	background: #fcfafa;
+	box-shadow: inset 0px 0px 15px #fcfafa;
+	-moz-box-shadow: inset 0px 0px 15px #faf6f6;
+	-webkit-box-shadow: inset 0px 0px 15px #fcf7f7;
+}
+
+.logForm fieldset legend {
+  color: #030303;
+	border-top: 1px solid #020202;
+	border-left: 1px solid #020202;
+	border-right: 1px solid #000000;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	background: white;
+	padding: 0px 8px 3px 8px;
+	box-shadow: -0px -1px 2px #030303;
+	-moz-box-shadow:-0px -1px 2px #050505;
+	-webkit-box-shadow:-0px -1px 2px #020202;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.logForm input[type=date],
+.logForm input[type=text],
+.logForm input[type=text],
+.logForm input[type=textarea]{
+  border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid #070003;
+	outline: none;
+	color: black;
+	padding: 10px 10px 10px 15px;
+	box-shadow: inset 1px 1px 4px #4b4a4a;
+	-moz-box-shadow: inset 1px 1px 4px #4b4a4a;
+	-webkit-box-shadow: inset 1px 1px 4px #4b4a4a;
+	background: #4b4a4a;
+	width:75%;
+}
+
+
+
+.logForm  input[type=submit],
+.logForm  input[type=button]{
+	background: #4b4a4a;
+	border: 1px solid #4b4a4a;
+	padding: 5px 15px 5px 15px;
+	color: white;
+  box-shadow: 5px 5px black;
+	box-shadow: inset -1px -1px 3px #4b4a4a;
+	-moz-box-shadow: inset -1px -1px 3px #4b4a4a;
+	-webkit-box-shadow: inset -1px -1px 3px #4b4a4a;
+	border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;	
+	font-weight: bold;
+}
+
+
+
+
+
+
+
 
 .required{
 	color:red;

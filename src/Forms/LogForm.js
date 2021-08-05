@@ -34,22 +34,24 @@ class LogForm extends Component {
         return (
             <div className="logForm">
             <form onSubmit={this.handleSubmit}>
-                <label>Date: </label>
-                <input type="text" name="date" placeholder="Date" value={this.state.date} onChange={this.handleOnChange} />
+            <fieldset><legend>New Log</legend>
+            <label for="field1"><span> Date: </span></label>
+                <input type="date" name="date" placeholder="Date" value={this.state.date} onChange={this.handleOnChange} />
                 <br />
                 <br />
-                <label>Language: </label>
+                <label for="field2"><span>Language: </span></label>
                 <input type="text" name="language" value={this.state.language} onChange={this.handleOnChange} />
                 <br />
                 <br />
-                <label>Length: </label>
+                <label for="field3"><span>Length: </span></label>
                 <input type="text" name="length" value={this.state.length} onChange={this.handleOnChange} />
                 <br />
                 <br />
-                <label>Notes: </label>
-                <input type="text" name="notes" value={this.state.notes} onChange={this.handleOnChange} />
+                <label for="field4"><span>Notes: </span></label>
+                <input type="textarea" name="notes" value={this.state.notes} onChange={this.handleOnChange} />
                 <br />
-                <input type="submit" value="Add Log" />
+                <label><span> </span><input type="submit" value="Add Log" /></label>
+                </fieldset>
             </form>
             </div>
         )

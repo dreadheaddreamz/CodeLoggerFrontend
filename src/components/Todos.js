@@ -21,7 +21,7 @@ class Todos extends Component {
         <h3>Priority:{todo.priority}</h3>
         <h3>Goal Date:{todo.completeBy}</h3>
         <h3>Context:{todo.context}</h3>
-        <button onClick={() => this.handleOnClick(todo.id)} className="delete">Delete Task</button>
+        <button onClick={() => this.handleOnClick(todo.id)} className="delete"> <i className="fa fa-trash"> </i> Delete Task</button>
         </div>
         )}
         </li>
