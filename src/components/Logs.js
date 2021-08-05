@@ -19,7 +19,7 @@ class Log extends Component {
         <h3>Language:{log.language}</h3>
         <h3>Time:{log.length}</h3>
         <h3>Notes: {log.notes}</h3>
-        <button onClick={() => this.handleOnClick(log.id)} className="delete">Delete Log</button>
+        <button onClick={() => this.handleOnClick(log.id)} className="delete"> <i className="fa fa-trash"> </i> Delete Log</button>
         </li>
         </div>
         )}
