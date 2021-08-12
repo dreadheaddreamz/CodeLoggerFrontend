@@ -11,6 +11,7 @@ import Nav from './components/Navigation/nav';
 import { getAllTrackers } from './actions/logActions';
 import { getAllTasks } from './actions/todoActions'
 import { connect } from 'react-redux';
+import Contact from './components/Contact';
 
 class App extends Component {
 
@@ -36,7 +37,7 @@ class App extends Component {
           <TodoContainer/>
         </Route>
         <Route exact path="/todos/new" render ={(routeprops) => (<TodoForm {...routeprops} />) }/>
-
+        <Route exact path="/contactus" component={Contact} />
         </Switch>
       </Router>
     )

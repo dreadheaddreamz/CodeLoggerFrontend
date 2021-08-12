@@ -46,6 +46,16 @@ const Nav = () => {
                     <li> | </li>
                 </NavLink>
                 </li>
+                <li>
+                <NavLink
+                exact
+                to="/contactus"
+                style={link}
+                activeStyle={activeLink}>
+                    Contact
+                    <li> | </li>
+                </NavLink>
+                </li>
             </ul>
         </div>
     )

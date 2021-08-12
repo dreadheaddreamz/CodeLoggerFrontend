@@ -5,7 +5,7 @@ import {deleteTodo} from '../actions/todoActions'
 
 class Todos extends Component {
     handleOnClick = (id) => {
-        console.log("props from todo unction", this.props.todos.id)
+        console.log("props from todo function", this.props.todos.id)
         this.props.deleteTodo(id)
     }
 
