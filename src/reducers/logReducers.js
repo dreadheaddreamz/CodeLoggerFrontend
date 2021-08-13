@@ -4,9 +4,9 @@ const logReducer = (state = {logs: [], loading: false}, action) => {
             return{...state, logs: [...state.logs, action.log]}
             case 'LOADING_LOGS':
                 return{...state,
-                    logs: [...state.logs], loading: true}
+                    logs: [...state.logs], loading: true}//my payload is logs, uses previous state snd spreads into new state
             case 'GET_LOGS':
-                return {...state, logs: action.logs, loading: false}
+                return {...state, logs: action.logs, loading: false} 
             case 'DELETE_LOGS':
                 console.log('delete action', action)
                 const logs = state.logs.filter(log => log.id !== action.log.id)

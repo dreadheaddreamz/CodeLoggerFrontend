@@ -27,7 +27,7 @@ export const deleteTodo = (id) => {
 }
 
 
-export const getAllTasks = () => {
+export const getAllTasks = () => { //once dispatched gets all task
     return (dispatch) => {
         dispatch({type: "LOADING_TODOS", loading: true})
         fetch("http://localhost:3001/todos")

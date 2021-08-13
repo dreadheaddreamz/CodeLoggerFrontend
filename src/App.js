@@ -8,7 +8,7 @@ import TodoForm from './Forms/TodoForm'
 //import Logs from './components/Logs'
 import Home from './components/Home'
 import Nav from './components/Navigation/nav';
-import { getAllTrackers } from './actions/logActions';
+import { getAllTrackers } from './actions/logActions';//action creators
 import { getAllTasks } from './actions/todoActions'
 import { connect } from 'react-redux';
 import Contact from './components/Contact';
@@ -55,8 +55,7 @@ const mapStateToProps = (state) => {
 }
 
 
-const mapDispatchToProps = (dispatch) => {
-  console.log(dispatch);
+const mapDispatchToProps = (dispatch) => { //loading all task and todos
   return {
       getAllTrackers: () => dispatch(getAllTrackers()),
       getAllTasks: () => dispatch(getAllTasks())

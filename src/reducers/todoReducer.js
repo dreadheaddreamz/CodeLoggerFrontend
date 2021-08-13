@@ -4,7 +4,7 @@ const todoReducer = (state = {todos: [], loading: false}, action) => {
             return{...state, todos: [...state.todos, action.todo]}
             case 'LOADING_TODOS':
                 return{...state,
-                    todos: [...state.todos], loading: true}
+                    todos: [...state.todos], loading: true}//spreads state into an array and loads them
             case 'GET_TODOS':
                 return {...state, todos: action.todos, loading: false}
             case 'DELETE_TODO': 
