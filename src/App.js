@@ -40,6 +40,8 @@ class App extends Component {
         <Route exact path="/contactus" component={Contact} />
         </Switch>
       </Router>
+
+      //routeprops - gives access to match, location, and history. Used to render the /trackers and /todos components after a submit is made
     )
   }
 }

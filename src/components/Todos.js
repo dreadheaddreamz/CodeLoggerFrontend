@@ -17,6 +17,7 @@ class Todos extends Component {
             <li>
         {this.props.todos.map((todo, id) =>
         <div className="tbox" key={id}>
+        {console.log("props in todos", this.props.todos)}
         <h3>Title:{todo.title}</h3>
         <h3>Priority:{todo.priority}</h3>
         <h3>Goal Date:{todo.completeBy}</h3>

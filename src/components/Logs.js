@@ -9,11 +9,12 @@ class Log extends Component {
         this.props.deleteLog(id)
     }
 
- render() {
+ render() { 
      return (
          <div className="log-box">
         {this.props.logs.map((log, id) =>
         <div className="box" key={id}>
+            {console.log("props in logs", this.props.logs)}
             <li>
         <h3>Date:{log.date}</h3>
         <h3>Language:{log.language}</h3>
